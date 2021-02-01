@@ -1,0 +1,146 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage[parfill]{parskip}
+
+% \title{Multivariable Function}
+% \author{Rey Rizki}
+% \maketitle
+
+\begin{document}
+    Vektor Gradien no. 6 \\
+    Diketahui: \(f(x, y, z) = x e^{-2y} \sec z\) \\
+    Ditanya: \(\vec{\nabla}f(x, y, z)\) \\
+    Jawab: \\
+    Berikut merupakan turunan parsial dari \(f(x, y, z)\)
+    \begin{displaymath}
+        \begin{split}
+            f_{x}(x, y, z) & = x e^{-2y} \sec z \\
+            f_{y}(x, y, z) & = -2x e^{-2y} \sec z \\
+            f_{z}(x, y, z) & = x e^{-2y} \sec z \tan z
+        \end{split}
+    \end{displaymath}
+
+    Sehingga
+    \begin{displaymath}
+        \begin{split}
+            \vec{\nabla}f(x, y, z) & = f_{x}(x, y, z) \, \hat{i} + f_{y}(x, y, z) \, \hat{j} + f_{z}(x, y, z) \, \hat{k} \\
+            & = x \, e^{-2y} \sec z \, \hat{i} + -2x e^{-2y} \sec z \, \hat{j} + x e^{-2y} \sec z \tan z \, \hat{k}
+        \end{split}
+    \end{displaymath}
+
+    Turunan Berarah no. 1e \\
+    Diketahui: \(f(x, y, z) = xy + z^2 \), di titik \(P(1, 1, 1)\), arah ke titik \(Q(5, -3, 3)\) \\
+    Ditanya: \(D_{\vec{u}}f(P) = \vec{\nabla} f(P) \bullet \vec{u}\) \\
+    Jawab: \\
+    Nilai \(\vec{\nabla} f(P)\)
+    \begin{displaymath}
+        \begin{split}
+            \vec{\nabla}f(P) & = y \, \hat{i} + x \, \hat{j} + 2z \, \hat{k} \\
+        \end{split}
+    \end{displaymath}
+    Vektor \(\vec{u}\) diperoleh dengan menormalkan vektor ke titik \(Q\)
+    \begin{displaymath}
+        \vec{u} = \frac{5 \, \hat {i} -3 \, \hat{j} + 3 \, \hat{k}}{43}
+    \end{displaymath}
+    Sehingga
+    \begin{displaymath}
+        \begin{split}
+            D_{\vec{u}}f(P) & = \frac{5y \, \hat{i} -3x \, \hat{j} +6z \, \hat{k}}{43} \\
+            D_{\vec{u}}f(1, 1, 1) & = \frac{5 \, \hat{i} -3 \, \hat{j} +6 \, \hat{k}}{43}
+        \end{split}
+    \end{displaymath}
+    \pagebreak
+
+    Bidang Singgung no. 2a \\
+    Diketahui: \(x^2 + y^2 -3z = 2\) di titik \((-1, -4, -6)\) \\
+    Ditanya: Persamaan bidang singgung dan garis normal \\
+    Jawab: \\
+    Misalkan \(f(x, y, z) = x^2 + y^2 -3z\), maka
+    \begin{displaymath}
+        \begin{split}
+            \vec{\nabla}f(x, y, z) & = 2x \, \hat i + 2y \, \hat j - 3 \, \hat k \\
+            \vec{\nabla}f(-1, -4, -6) & = -2 \, \hat i - 8 \, \hat j - 3 \hat k
+        \end{split}
+    \end{displaymath}
+    Persamaan garis singgung di \((-1, -4, -6)\) adalah
+    \begin {displaymath}
+        \begin{split}
+            -2 (x + 1) - 8 (y + 4) + 3 (z - 6) & = 0 \\
+            -2x - 2 - 8y - 32 + 3z - 18 & = 0 \\
+            -2x - 8y + 3z - 52 & = 0 \\
+            -2x - 8y + 3z & = 52
+        \end{split}
+    \end {displaymath}
+    Sedangkan persamaan paramter garis normalnya adalah
+    \begin{displaymath}
+        \begin{split}
+            x & = -1 - 2t \\
+            y & = -4 - 8t \\
+            z & = 6 + 3t
+        \end{split}
+    \end{displaymath}
+
+    Uji nilai ekstrim no 1b. \\
+    Diketahui: \(f(x, y) = xy^2 - 6x^2 - 6y^2\) \\
+    Ditanya: Titik ekstrim dan jenisnya \\
+    Jawab: \\
+    Berikut merupakan turunan parsial dari \(f(x, y)\)
+    \begin{displaymath}
+        \begin{split}
+            f_x(x, y) & = y^2 - 12x \\
+            f_y(x, y) & = 2xy - 12y \\
+            f_{xx}(x, y) & = -12 \\
+            f_{yy}(x, y) & = 2x - 12 \\
+            f_{xy}(x, y) & =  2y
+        \end{split}
+    \end{displaymath}
+
+    Titik kritisnya diperoleh dengan menyelesaikan persamaan \(f_x(x, y) = 0\) dan \(f_y(x, y) = 0\)
+    \begin{equation}
+        \begin{split}
+            f_x(x, y) & = 0 \\
+            y^2 - 12 & = 0
+        \end{split}
+    \end{equation}
+    \begin{equation}
+        \begin{split}
+            f_y(x, y) & = 0 \\
+            2xy- 12 & = 0
+        \end{split}
+    \end{equation}
+
+    Dari persamaan (1) diperoleh
+    \begin{equation}
+        \begin{split}
+            -12x & = -y^2 \\
+            x & = \frac{y^2}{12}
+        \end{split}
+    \end{equation}
+
+    Substitusi persamaan (3) ke persamaan (2) sehingga
+    \begin{equation}
+        \begin{split}
+            \frac{y^2}{6} - 12y & = 0 \\
+            y^3 - 72y & = 0 \\
+            y (y^2 - 72) & = 0
+        \end{split}
+    \end{equation}
+
+    Dari persamaan 4, didapatkan nilai \(y = 0\) dan \(y = \sqrt{72}\).
+    Sehingga, jika disubstitusikan ke persamaan (3) didapatkan titik ekstrim di \((0,0)\) dan \((6, \sqrt{72})\) \\
+
+    Untuk jenis nilai ekstrimnya dapat dilihat di tabel berikut
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{c c c c c l}
+            \hline
+            Titik & \(f_{xx}\) & \(f_{yy}\) & \(f_{xy}\) & \(D\) & Jenis \\ [0ex]
+            \hline
+            \((0, 0)\) & -12 & -12 & 0 & 144 & Maksimum lokal \\
+            \((6, \sqrt{72})\) & -12 & 6 & 12 & 144 & Titik Pelana \\ [0ex]
+            \hline
+        \end{tabular}
+    \end{table}
+\end{document}
+
