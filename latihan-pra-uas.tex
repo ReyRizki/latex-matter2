@@ -1,0 +1,206 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage[parfill]{parskip}
+
+% \title{Multivariable Function}
+% \author{Rey Rizki}
+% \maketitle
+
+\begin{document}
+    2.f \\
+    $$\vec f(t) = f_1(t) \hat i + f_2(t) \hat j + f_3(t) \hat k$$ \\
+    $$||\vec f(t)|| = \sqrt{(f_1(t))^2 + (f_2(t))^2 + (f_3(t))^2}$$ \\
+
+    2.i \\
+    $$\vec x (t) = \vec f(t_0) + t \vec f'(t_0)$$ \\
+
+    2.j\\
+    $$\vec T(t) = \frac{\vec v(t)}{||\vec v(t)||}$$\\
+    $$\kappa (t) = \frac{||\vec T'(t)||}{||\vec v(t)||}$$\\
+
+    3.h \\
+    $$f_x(a, b, c)(x - a) + f_y(a, b, c)(y - b) + f_z(a, b, c)(z - c) = 0$$\\
+
+    3.i \\
+    $$\vec \nabla f(x, y) = f_x(x, y)  \, \hat i + f_y(x, y) \, \hat j$$ \\
+
+    3.j \\
+    $$D_uf(p) = \vec \nabla f(p) \cdot \vec u$$\\
+    $$\vec u = \frac{\vec a}{||\vec a||}$$ \\
+
+    3.k \\
+    $$D(x_0, y_0) = f_{xx}(x_0, y_0) . f_{yy}(x_0, y_0) - (f_{xy}(x_0, y_0))^2$$\\
+
+    4.a \\
+    $$\int _a ^b \int _c ^d f(x, y) dA$$ \\
+
+    4.a \\
+    $$\int \int _R f(x, y) dA$$ \\
+
+    5.a \\
+    $$\vec f(t) = \frac{t^2 - 2t - 15}{t- 5} \, \hat i + \frac{t + \sqrt 5}{t^2 - 5} \, \hat j$$\\
+    $$\lim_{t \to 5} \vec f(t)$$\\
+    $$\lim_{t \to 5} \biggr [\frac{t^2 - 2t - 15}{t- 5} \, \hat i + \frac{t + \sqrt 5}{t^2 - 5} \, \hat j \biggr ]$$
+    $$= \lim_{t \to 5} \biggr [\frac{(t - 5)(t + 3)}{t- 5} \, \hat i + \frac{t + \sqrt 5}{(t + \sqrt 5)(t - \sqrt 5)} \, \hat j \biggr ]$$
+    $$= \lim_{t \to 5} \biggr [t + 3 \, \hat i + \frac{1}{t - \sqrt 5} \, \hat j \biggr ]$$
+    $$=  8 \, \hat i + \frac{1}{5 - \sqrt 5} \, \hat j $$
+    $$=  8 \, \hat i + \frac{5 + \sqrt 5}{20} \, \hat j $$
+
+    5.b \\
+    Diketahui: \(\vec f(t) = t \hat i + t^2 e^{-2t} \hat j + \frac{1}{t^2} \hat k \) \\
+    Ditanya: \(D_t \vec f (0), D_t^2 \vec f (0), \vec f' (t), \vec f''(t) \) \\
+    Jawab: \\
+    Turunan pertama dari \(\vec f(t)\) adalah \\
+    \begin{displaymath}
+        \begin{split}
+            \vec f' (t) = \hat i + 2t e^{-2t} (1 - t) \hat j - \frac{2}{t^3} \hat k
+        \end{split}
+    \end{displaymath}
+
+    Sehingga, nilai \(D_t \vec f(0)\) adalah
+    \begin{displaymath}
+        \begin{split}
+            D_t \vec f(0) = \hat i - td \, \hat k
+        \end{split}
+    \end{displaymath}
+
+    Nilai \(\vec f'' (t) \) didapatkan dengan menurunkan \(\vec f' (t) \), maka
+    \begin{displaymath}
+        \begin{split}
+            \vec f'' (t) = - 2t e^{-2t} \hat j - \frac{6}{t^4} \hat k
+        \end{split}
+    \end{displaymath}
+
+    Sehingga, nilai \(D_t^2 \vec f(0)\) adalah
+    \begin{displaymath}
+        \begin{split}
+            D_t^2 \vec f(0) = td \, \hat k
+        \end{split}
+    \end{displaymath}
+
+    5.c\\
+    $$\vec f(t) = 4 \sin t \, \hat i + 8 \cos t \, \hat j$$
+    $$x = 4 \sin t$$
+    $$\frac{x}{4} = \sin t$$
+    $$y = 8 \cos t$$
+    $$\frac{y}{8} = \cos t$$
+
+    $$(\frac{x}{4})^2 + (\frac{y}{8})^2 = 1$$
+
+    5.d \\
+    Diketahui: \(\vec{w_0} = <4, 6, 3>\) dan \(\vec v = <-1, 2, 3>\) \\
+    Ditanya: \(\vec w\) \\
+    Jawab: \\
+    Persamaan parameter dari garis tersebut adalah
+    \begin{displaymath}
+        \begin{split}
+            x &= 4 - t \\
+            y &= 6 + 2t \\
+            z &= 3 + 3t
+        \end{split}
+    \end{displaymath}
+
+    6.a \\
+    Diketahui: \(x^2 + y^2 + z^2 = 2 \) dan \(P(-1, -4, 6)\) \\
+    Ditanya: Persamaan bidang singgung \\
+    Jawab: \\
+    Misalkan \(f(x, y, z) = x^2 + y^2 + z^2 \) \\
+    Maka, vektor gradien dari \(f(x, y, z)\) adalah \\
+    \begin{displaymath}
+        \begin{split}
+            \vec \nabla f(x, y, z) &= 2x \hat i + 2y \hat j + 2z \hat k \\
+            \vec \nabla f(-1, -4, 6) &= -2 \hat i - 8 \hat j + 12 \hat k
+        \end{split}
+    \end{displaymath}
+
+    Sehingga, persamaan garis singgungnya
+    \begin{displaymath}
+        \begin{split}
+            -2(x + 1) - 8(y + 4) + 12(z - 6) &= 0 \\
+            -2x - 2 - 8y - 32 + 12z - 72 &= 0 \\
+            -2x - 8y + 12z - 106 &= 0 \\
+            x + 4y - 6z &= -53 \\
+        \end{split}
+    \end{displaymath}
+
+    6.b \\
+    Diketahui: \(f(x, y) = \frac{2x - y}{xy} \) \\
+    Ditanya: \(f_{xx}, \, f_{yy}, \, f_{xy}, \, f_{yx} dari f(x, y)\) \\
+    Jawab: \\
+    Berikut merupakan turunan pertama dari \(f(x, y)\) \\
+    \begin{displaymath}
+        \begin{split}
+            f_x(x, y) &= \frac{2xy - (2x - y)}{x^2y^2} \\
+            &= \frac{2xy - 2xy + y^2}{x^2y^2} \\
+            &= \frac{y^2}{x^2y^2} \\
+            &= \frac{1}{x^2}
+        \end{split}
+    \end{displaymath}
+
+    \begin{displaymath}
+        \begin{split}
+            f_y(x, y) &= \frac{-xy - (2x - y)x}{x^2y^2} \\
+            &= \frac{-xy -2x^2 + xy}{x^2y^2} \\
+            &= \frac{-2x^2}{x^2y^2} \\
+            &= \frac{-2}{y^2}
+        \end{split}
+    \end{displaymath}
+    Sehingga, turunan kedua dari \(f(x, y)\)
+    \begin{displaymath}
+        \begin{split}
+            f_{xx}(x, y) &= \frac{-2}{x^3} \\
+            f_{yy}(x, y) &= \frac{4}{y^3} \\
+            f_{xy}(x, y) &= 0 \\
+            f_{yx}(x, y) &= 0 \\
+        \end{split}
+    \end{displaymath}
+
+    6.c \\
+    Diketahui: \(f(x, y) = 2x^2 + y^2\) dan \(k = -2, -1, 0, 1, 2\) \\
+    Ditanya: Gambar kurva ketinggian z = k \\
+    Jawab: \\
+    Nilai \(f(x, y)\) hanya terdefinisi saat \(k \geq 0\) \\
+    \begin{displaymath}
+        \begin{split}
+            2x^2 + y^2 = 0 \, \rightarrow \text{ titik} \\
+            2x^2 + y^2 = 1 \, \rightarrow \text{ elips} \\
+            2x^2 + y^2 = 2 \, \rightarrow \text{ elips}
+        \end{split}
+    \end{displaymath}
+
+    Sehingga, gambar kurva ketinggian adalah sebagai berikut
+
+    7.a \\
+    Diketahui: \(\int_{0}^{6}\int_{0}^{6} x^2 + 6y \, dy \, dx\) \\
+    Ditanya: Batas dari x dan y serta hasil integral \\
+    Jawab: \\
+    Batas \(x\) adalah \([0, 6]\) sedangkan batas \(y\) adalah \([0, 6]\) \\
+    Hasil integral tersebut adalah
+    \begin{displaymath}
+        \begin{split}
+            \int_{0}^{6}\int_{0}^{6} x^2 + 6y \, dy \, dx &= \int_{0}^{6} x^2y + 3y^2 \biggr \vert _0 ^6  \, dx\ \\
+            &= \int _0 ^6 6x^2 + 108 dx \\
+            &= 2x^3 + 108x \biggr \vert _0 ^6 \\
+            &= 432 + 648 \\
+            &= 1080 \\
+        \end{split}
+    \end{displaymath}
+
+    7.b \\
+    Diketahui: \(\int\int_{R} 2x \, e^y \, dA\), \(R\) dibatasi oleh \(y = x^2, x = 1\) \\
+    Ditanya: Batas dari x dan y serta hasil integral \\
+    Jawab: \\
+    Batas \(x\) adalah \([0, 1]\) sedangkan batas \(y\) adalah \([0, x^2]\) \\
+    Maka, integral tersebut diubah menjadi \(\int _0 ^1 \int_0 ^{x^2} 2x \, e^y \, dy \, dx\) \\
+    Hasil integral tersebut adalah
+    \begin{displaymath}
+        \begin{split}
+            \int _0 ^1 \int_0 ^{x^2} 2x \, e^y \, dy \, dx &= \int_0 ^6 2x \, e^y \biggr \vert _0 ^{x^2}  \, dx\ \\
+            &= \int_0 ^6 2x \, e^{x^2} \, dx\ \\
+            &= e^x \biggr \vert _0 ^1 \\
+            &= e - 1 \\
+        \end{split}
+    \end{displaymath}
+\end{document}
+
