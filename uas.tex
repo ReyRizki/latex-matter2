@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage[parfill]{parskip}
+
+% \title{Multivariable Function}
+% \author{Rey Rizki}
+% \maketitle
+
+\begin{document}
+    3.a. \\
+    $$x = 4 \sin t \, - 2$$ dan $$y = 8 \cos t \, + 1$$
+    $$\vec f(t) = x \, \hat i + y \, \hat j$$
+    $$\vec f(t) = 4 \sin t \, - 2$ \, \hat i + 8 \cos t \, + 1$ \, \hat j$$
+
+    3.b \\
+    $$\sin t = \frac{x + 2}{4}$$
+    $$\cos t = \frac{y - 1}{8}$$
+
+    $$\frac{(x + 2)^2}{16} + \frac{(y - 1)^2}{64} = 1$$
+
+    4.a \\
+    $$\lim_{t \to 2} \biggr[\frac{t^2 + 6t - 12}{t - 2} \, \hat i + \frac{t + \sqrt 2}{t^2 - 2} \, \hat j\biggr]$$
+    $$= \lim_{t \to 2} \biggr[\frac{(t + 8)(t - 2)}{t - 2} \, \hat i + \frac{t + \sqrt 2}{(t + \sqrt 2)(t - \sqrt 2)} \, \hat j\biggr]$$
+    $$= \lim_{t \to 2} \biggr[t + 8 \, \hat i + \frac{1}{t - \sqrt 2} \, \hat j\biggr]$$
+    $$= 10 \, \hat i + \frac{1}{2 - \sqrt 2} \, \hat j$$
+
+    4.b \\
+    $$\lim_{t \to \pi} \biggr[\frac{2 \cos 2t}{\cos^2t} \, \hat i + \frac{2 \cos 2t}{\sin^2 (2\pi - t)} \, \hat j\biggr]$$
+    $$= \frac{2}{1} \, \hat i + \frac{2}{1} \, \hat j$$
+    $$= 2 \, \hat i + 2 \, \hat j$$
+
+    4.c \\
+    $$\lim_{(x, y) \to (2, 3)} \frac{3x^2y}{3x + 2y} + \frac{2x^2y}{8y - 4}$$
+    $$= \frac{36}{12} + \frac{24}{20}$$
+    $$= 3 + \frac{6}{5}$$
+    $$= 4 \frac{1}{5}$$
+
+    4.d \\
+    $$\lim_{(x, y) \to (\pi, 0)} \frac{\sin y}{\cos x}$$
+    $$= \lim_{(x, y) \to (\pi, 0)} \frac{0}{- 1}$$
+    $$= 0$$
+
+    5.a \\
+    $$\vec f(t) = \frac{\ln t}{5t^2}$$
+    $$\vec f''(t)$$
+
+    $$\vec f'(t) = \frac{\frac{1}{t} 5t^2 - \ln t \, 10 t}{25t^4}$$
+    $$\vec f'(t) = \frac{5t - \ln t \, 10 t}{25t^4}$$
+
+    $$\vec f''(t) = \frac{(5 - (10 + 10 \, \ln t) \, 25 t^4) - (5t - \ln t \, 10 t) 100t^3}{625t^8}$$
+    $$\vec f''(t) = \frac{((-5 + 10 \, \ln t) \, 25 t^4) - (5t - \ln t \, 10 t) 100t^3}{625t^8}$$
+
+    5.b \\
+    $$f(x, y) = x^3y + (2xy)^3$$
+    $$f_y(x, y) = x^3 + 3(2xy)^2 2x$$
+    $$f_y(x, y) = x^3 + 6x (2xy)^2$$
+
+    $$f_{yx}(x, y) = 3x^2 + 6 (2xy)^2 + 6x (2xy) 2y$$
+    $$f_{yx}(x, y) = 3x^2 + 24x^2y^2 + 24x^2y^2$$
+    $$f_{yx}(x, y) = 3x^2 + 48x^2y^2$$
+    $$f_{yx}(x, y) = 3x^2 (1 + 16y^2)$$
+\end{document}
+
